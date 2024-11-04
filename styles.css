@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#summon-section {
+    margin: 20px;
+}
+
+#tower-section {
+    margin: 20px;
+}
+
+#towers .tower {
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+#play-area {
+    margin-top: 20px;
+    position: relative;
+}
+
+#gameCanvas {
+    border: 1px solid #333;
+}
