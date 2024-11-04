@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summon & Defend Tower Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Summon & Defend</h1>
+    <div id="game-container">
+        <!-- Summoning Section -->
+        <div id="summon-section">
+            <button id="summon-btn">Summon Unit</button>
+            <p id="summon-result"></p>
+            <img id="summon-image" src="" alt="Summoned Unit" style="display: none; width: 100px; height: auto;">
+        </div>
+
+        <!-- Tower Section -->
+        <div id="tower-section">
+            <h2>Your Towers</h2>
+            <div id="towers">
+                <!-- Towers will be added here dynamically -->
+            </div>
+        </div>
+
+        <!-- Game Play Area -->
+        <div id="play-area">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+
+    <!-- Game Script -->
+    <script src="game.js"></script>
+</body>
+</html>
