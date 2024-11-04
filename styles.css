@@ -1,35 +1,73 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
-#game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#summon-section {
-    margin: 20px;
-}
-
-#tower-section {
-    margin: 20px;
-}
-
-#towers .tower {
-    border: 1px solid #333;
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    text-align: center;
-}
-
-#play-area {
-    margin-top: 20px;
+#gameArea {
     position: relative;
+    width: 800px;
+    height: 600px;
+    border: 2px solid #333;
+    overflow: hidden;
+    background-color: #a9d0f5; /* Sky blue background */
 }
 
-#gameCanvas {
-    border: 1px solid #333;
+#roundIndicator {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.enemy {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.bloon {
+    background-image: url('images/bloon.jpg');
+    background-size: cover;
+}
+
+.moab {
+    background-image: url('images/moab.jpg');
+    background-size: cover;
+}
+
+.bloonarius {
+    background-image: url('images/bloonarius.jpg');
+    background-size: cover;
+}
+
+.tower {
+    position: absolute;
+    cursor: pointer;
+}
+
+.drillmanTower {
+    width: 100px;
+    height: 100px;
+    background-image: url('images/drillmanTower.jpg');
+    background-size: cover;
+}
+
+.cinemamanTower {
+    width: 100px;
+    height: 100px;
+    background-image: url('images/cinemamanTower.jpg');
+    background-size: cover;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
 }
